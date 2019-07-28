@@ -29,7 +29,7 @@
 
 namespace Client{
     namespace DataFrame{
-        struct FlightData{
+        struct FlightData{   // unused
             double Lat;
             double Lon;
             double latRaw;
@@ -61,7 +61,6 @@ namespace Client{
             QUrl getEndpointAddress() const;
             void setEndpointAddress(const QUrl &value);
             Q_INVOKABLE void startDownloadData();
-           // ~ClientManager(){delete requestTimer; delete }
         signals:
 
         public slots:
